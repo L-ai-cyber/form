@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="/pwn.css">
+</head>
+<body>
+    <h1>Html quiz</h1>
+    <form action="form.php" method="POST">
+        <fieldset id="info">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" placeholder="name">
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname" placeholder="surname">
+            <br>
+            <br>
+            <label for="mail">E-mail address:</label>
+            <input type="email" id="mail" name="mail" placeholder="e-mail address">
+        </fieldset>
+
+        <fieldset>
+            <label for="start">Start Date:</label>
+            <input type="date" id="start" name="start" min="2021-11-23">
+        </fieldset>
+
+        <br>
+
+        <fieldset >
+            <p>HTML stands for:</p>
+            <input type="radio" id="htmlr1" name="htmlr">
+            <label for="htmlr1">Hyper Text Markup Language</label>
+            <br>
+            <input type="radio" id="htmlr2" name="htmlr">
+            <label for="htmlr2">Hyper Text Makeup Language</label>
+            <br>
+            <input type="radio" id="htmlr3" name="htmlr">
+            <label for="htmlr3">Hyper Tech Markup Language</label>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <p>Select the correct HTML tags:</p>
+            <input type="checkbox" name="htmlc" id="htmlc1">
+            <label for="htmlc1">h7</label>
+            <br>
+            <input type="checkbox" name="htmlc" id="htmlc2">
+            <label for="htmlc2">h6</label>
+            <br>
+            <input type="checkbox" name="htmlc" id="htmlc3">
+            <label for="htmlc3">p</label>
+            <br>
+            <input type="checkbox" name="htmlc" id="htmlc4">
+            <label for="htmlc4">form</label>
+            <br>
+            <input type="checkbox" name="htmlc" id="htmlc5">
+            <label for="htmlc5">promt</label>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <label for="drop">Choose the HTML file extension:</label>
+            <select name="drop" id="drop">
+                <option value="htl">.htm</option>
+                <option value="ht">.ht</option>
+                <option value="hml">.hml</option>
+                <option value="html">.html</option>
+            </select>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <label for="csshtml">Enter some code in html/css:</label>
+            <br>
+            <textarea name="csshtml" id="csshtml" cols="30" rows="10"></textarea>
+        </fieldset>
+        <br>
+        <button>Submit</button>
+    </form>
+
+</body>
+</html>
